@@ -1,0 +1,743 @@
+* {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+body {
+  
+}
+
+
+
+.outer_container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: max(25vw) max(75vw);
+  grid-template-areas: "sidebar bodyColumn";
+  
+}
+
+.sidebar {
+  background-color: #dc2626;
+  color: white;
+  display: grid;
+  grid-template-rows: 0.1fr 0.3fr 0.2fr;
+  grid-area: sidebar;
+  align-content: start;
+  z-index: 2;
+  
+}
+
+.title {
+  display: grid;
+  font-size: 28px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.3fr 1fr;
+  
+}
+
+.sec1 {
+  display: grid; 
+  justify-content: end;
+  
+}
+
+.sec2 {
+  display: grid; 
+  justify-content: start;
+  align-content: center;
+  padding-left: 15px;
+}
+
+.title svg {
+  display: grid;
+  width: 50px;
+  fill: white;
+  
+}
+
+.title p {
+  display: grid;
+  width: 200px;
+  padding-left: 15px;
+  justify-content: start;
+  align-content: center;
+}
+
+.sidebar ul {
+  
+  list-style: none;
+  
+}
+
+.nav1 {
+  
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-areas:
+    '. .'
+    'ic5 home'
+    'ic6 profile'
+    'ic7 messages'
+    'ic8 history'
+    'ic9 tasks'
+    'ic10 communities'
+    '. .'
+    ;
+}
+
+.ic5 {
+  display: grid;
+  grid-area: ic5;
+  align-content: start;
+  justify-content: end;
+  fill: white;
+}
+
+.ic5 svg {
+  width: 30px;
+  
+}
+
+.ic6 {
+  display: grid;
+  grid-area: ic6;
+  align-content: start;
+  justify-content: end;
+  fill: white;
+}
+
+.ic6 svg {
+  width: 30px;
+  
+}
+
+.ic7 {
+  display: grid;
+  grid-area: ic7;
+  align-content: start;
+  justify-content: end;
+  fill: white;
+}
+
+.ic7 svg {
+  width: 30px;
+  
+}
+
+.ic8 {
+  display: grid;
+  grid-area: ic8;
+  align-content: start;
+  justify-content: end;
+  fill: white;
+}
+
+.ic8 svg {
+  width: 30px;
+  
+}
+
+.ic9 {
+  display: grid;
+  grid-area: ic9;
+  align-content: start;
+  justify-content: end;
+  fill: white;
+}
+
+.ic9 svg {
+  width: 30px;
+  
+}
+
+.ic10 {
+  display: grid;
+  grid-area: ic10;
+  align-content: start;
+  justify-content: end;
+  fill: white;
+}
+
+.ic10 svg {
+  width: 30px;
+  
+}
+
+.home {
+  display: grid;
+  grid-area: home;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+  
+}
+
+.profile {
+  display: grid;
+  grid-area: profile;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+  
+}
+
+.messages {
+  display: grid;
+  grid-area: messages;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+  
+}
+
+.history {
+  display: grid;
+  grid-area: history;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+  
+}
+
+.tasks {
+  display: grid;
+  grid-area: tasks;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+  
+}
+
+.communities {
+  display: grid;
+  grid-area: communities;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+  
+}
+
+
+
+.nav2 {
+  
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-areas:
+    '. .'
+    'ic2 settings'
+    'ic3 support'
+    'ic4 privacy'
+    '. .'
+    ;
+}
+
+.ic2 {
+  display: grid;
+  grid-area: ic2;
+  align-content: start;
+  justify-content: end;
+  fill: white;
+}
+
+.ic2 svg {
+  width: 30px;
+  
+}
+
+.ic3 {
+  display: grid;
+  grid-area: ic3;
+  justify-content: end;
+  align-content: start;
+  fill: white;
+}
+
+.ic3 svg {
+  width: 30px;
+  
+}
+
+.ic4 {
+  display: grid;
+  grid-area: ic4;
+  justify-content: end;
+  align-content: start;
+  fill: white;
+}
+
+.ic4 svg {
+  width: 30px;
+  
+}
+
+.settings {
+  display: grid;
+  grid-area: settings;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.support {
+  display: grid;
+  grid-area: support;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.privacy {
+  display: grid;
+  grid-area: privacy;
+  justify-content: start;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .bodyColumn {
+    display: grid;
+    grid-area: header bodyColumn;
+    gap: 0px; /* Adjust the gap as needed for smaller viewports */
+  }
+}
+
+
+.bodyColumn {
+  
+  display: grid;
+  grid-area: bodyColumn;
+  
+  grid-template-areas: 
+    "header"
+    "cards";
+  gap: 0px;
+}
+
+.header {
+  display: grid;
+  background-color: white;
+  grid-area: header;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.topHead {
+  display: grid;
+  grid-template-columns: 0.3fr 2.8fr 0.8fr 0.4fr 0.7fr;
+  
+}
+
+.icon1 {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 2 ;
+  justify-content: right;
+  align-content: center;
+  padding-right: 5px;
+}
+
+#icon1 {
+  width: 25px;
+  
+}
+
+.textinput {
+  display: grid;
+  grid-area: 1 / 2 / 2 / 3 ;
+  
+  justify-content: start;
+  align-content: center;
+  padding-left: 15px;
+}
+
+.input {
+  height: 28px;
+  width: 560px;
+  border-radius: 13px;
+  background-color: lightgrey;
+
+}
+
+.icon2 {
+  display: grid;
+  grid-area: 1 / 3 / 2 / 4 ;
+  justify-content: right;
+  align-content: center;
+}
+
+#icon2 {
+  width: 25px;
+  
+}
+
+.logo2 {
+  display: grid;
+  grid-area: 1 / 4 / 2 / 5 ;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo2 > svg{
+  width: 45px;
+  
+}
+
+.name {
+  display: grid;
+  grid-area: 1 / 5 / 2 / 6 ;
+  justify-content: start;
+  align-content: center;
+  
+}
+
+
+.bottomHead {
+  
+  display: grid;
+  grid-template-columns: 1.2fr 0.6fr 2fr;
+}
+
+.logo1 {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 2 ;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-rows: 0.8fr 1fr;
+  
+}
+
+.blank {
+  
+  grid-area: 1 / 2 / 2 / 3 ;
+  
+}
+
+.catLogo {
+  grid-area: 1 / 1 / 3 / 2 ;
+  
+  display: grid;
+  justify-content: end;
+  align-content: center;
+  padding-right: 5px;
+}
+
+.catLogo svg {
+  width: 65px;
+  
+}
+
+.hi {
+  display: grid;
+  grid-area: 1 / 2 / 2 / 3 ;
+  
+  align-content: end;
+  justify-content: start;
+}
+
+.nameTag {
+  display: grid;
+  grid-area: 2 / 2 / 3 / 3 ;
+  
+  align-content: start;
+  justify-content: start;
+  
+}
+
+.nav {
+  
+  grid-area: 1 / 3 / 2 / 4 ;
+  
+  display: grid;
+  grid-template-columns: 1fr 100px 100px 100px 0.1fr;
+  grid-template-areas: ". new upload share .";
+  gap: 028px;
+  align-content: center;
+}
+
+
+
+#new {
+  grid-area: new;
+  background-color: #dc2626;
+  height: 45px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+
+#upload {
+  
+  grid-area: upload;
+  background-color: #dc2626;
+  height: 45px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+#share{
+  
+  grid-area: share;
+  background-color: #dc2626;
+  height: 45px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+.cards {
+  display: grid;
+  grid-area: cards;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 4fr;
+  background-color: #bccbde;
+  
+}
+
+.column1 {
+
+  display: grid;
+  grid-template-rows: 0.2fr 0.05fr 1.3fr;
+  grid-template-columns: 1fr;
+  
+}
+
+.columnTitle {
+  display: grid;
+  justify-content: start;
+  align-content: end;
+  padding-left: 25px;
+  font-size: 24px;
+  font-Weight: bold;
+  background-color: #bccbde;
+  
+}
+
+.columnSpacer {
+  background-color: #bccbde;
+  border: 2px solid green;
+}
+
+.projects {
+  
+  display: grid;
+  background-color: #bccbde;
+  padding-left: 25px;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-content: start;
+  justify-items: start;
+
+}
+
+.card {
+  display: grid;
+  background-color: #FFFFFF;
+  height: 230px;
+  width: 440px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cardTitle {
+  padding-top: 30px;
+  padding-left: 15px;
+  text-align: left;
+  
+}
+
+.cardBody {
+  padding-top: 5px;
+  padding-left: 15px;
+  text-align: left;
+  
+}
+
+.column2 {
+  display: grid;
+  background-color: #bccbde;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 400px; 
+}
+
+#spacer {
+  
+  
+  
+}
+
+.columnTitle2 {
+  display: grid;
+  align-content: end;
+  justify-content: start;
+  font-Weight: bold;
+  background-color: #bccbde;
+  width: 380px;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.infoCard1 {
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  align-content: start;
+  justify-self: center;
+  width: 380px;
+  
+}
+
+.sideCard1 {
+  display: grid;
+  background-color: #FFFFFF;
+  grid-template-rows: 1fr 0.3fr 1fr 0.3fr 0.5fr 1fr 0.3fr 0.5fr 0.3fr 1fr;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  
+}
+
+#hr {
+  align-self: center;
+  justify-self: center;
+  width: 270px;
+  height: 0.5px;
+  background-color: grey;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.cardBody2 {
+  
+  text-align: left;
+  width: 260px;
+  align-self: center;
+  justify-self: center;
+}
+
+#one {
+  display: grid;
+  justify-content: start;
+  align-content: end;
+  
+  font-weight: bold;
+  height: 20px;
+  width: 260px;
+  align-self: end;
+  justify-self: center;
+}
+
+#two {
+  display: grid;
+  justify-content: start;
+  align-content: end;
+  
+  font-weight: bold;
+  height: 20px;
+  width: 260px;
+  align-self: end;
+  justify-self: center;
+}
+
+#three {
+  display: grid;
+  align-content: end;
+  justify-content: start;
+  font-weight: bold;
+  width: 260px;
+  align-self: center;
+  justify-self: center;
+}
+
+
+.sideCard2 {
+  background-color: #FFFFFF;
+  
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+.columnTitle3 {
+  display: grid;
+  align-content: end;
+  justify-content: start;
+  font-Weight: bold;
+  background-color: #bccbde;
+  padding-left: 10px;
+  font-size: 24px;
+  width: 380px;
+}
+
+
+.infoCard2 {
+  display: grid;
+  align-content: start;
+  grid-template-columns: 1fr;
+  
+  justify-self: center;
+  width: 380px;
+}
+
+#four {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-content: center;
+}
+
+.ic11 > svg {
+  width: 40px;
+  
+}
+
+#five {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;  
+  
+  align-content: center;
+}
+
+.ic12 > svg {
+  width: 40px;
+  
+}
+
+#six {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-content: center;
+}
+
+.ic13 > svg {
+  width: 40px;
+  
+}
+
+#seven {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-content: center;
+}
+
+.ic14 > svg {
+  width: 40px;
+  
+}
